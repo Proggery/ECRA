@@ -1,0 +1,97 @@
+//--- GLOBALS ---
+a {
+    text-decoration: none;
+}
+.primaryBtn {
+    background: #004494;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.secondaryBtn {
+    background: #004494;
+    color: white;
+}
+
+//--- NAVBAR ---
+//--- NAVBAR END ---
+
+//--- CAROUSEL ---
+.carousel {
+  background: url("../ecra-assets/Vector/vector-1.svg");
+  background-position: bottom;
+  height: 500px;
+  position: relative;
+
+  .carousel-item-left {
+    .event {
+        color: #004494;
+    }
+    h1 {
+      width: 300px;
+    }
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  .carousel-item-rigth {
+    position: relative;
+    height: 500px;
+
+    img {
+      position: absolute;
+      top: -380px;
+      left: 20px;
+      width: 1100px;
+    }
+    .img2 {
+      opacity: 0.5;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background: #004494;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+  }
+
+  .carousel-control-prev {
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-control-next {
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-control-prev-icon {
+    background: url("../img/arrow_right.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.6rem;
+    height: 1rem;
+  }
+
+  .carousel-control-next-icon {
+    background: url("../img/arrow_left.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.6rem;
+    height: 1rem;
+  }
+}
+//--- CAROUSEL END ---
+
+
