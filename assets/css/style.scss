@@ -1,21 +1,101 @@
+@import "./mediaquery.scss";
+
 //--- GLOBALS ---
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .primaryBtn {
-    background: #004494;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
+  background: #004494;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+
+  &:hover {
+    background: #e4ff1b;
+    color: black;
+  }
 }
 .secondaryBtn {
-    background: #004494;
-    color: white;
+  color: #004494;
+  font-size: 0.9rem;
 }
 
 //--- NAVBAR ---
-//--- NAVBAR END ---
+nav {
+  .navContent {
+    position: relative;
 
+    .searchBtn {
+      position: relative;
+      cursor: pointer;
+
+      .searchBG {
+        width: 100px;
+      }
+
+      .searchText {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+      }
+      .searchIcon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .searchInput {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      height: 100%;
+
+      input {
+        height: 100%;
+        width: 800px;
+        border: none;
+        background: #004494;
+        position: relative;
+
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     width: 400px;
+        //     height: 10px;
+        //     background: white;
+        //     top: 10px;
+        //     left: 0;
+        // }
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      .searchCloseBtn {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        padding: 10px;
+      }
+    }
+
+    .form-hidden {
+      display: none;
+    }
+    .form-visible {
+      display: block;
+    }
+  }
+}
+//--- NAVBAR END ---
 //--- CAROUSEL ---
 .carousel {
   background: url("../ecra-assets/Vector/vector-1.svg");
@@ -25,15 +105,31 @@ a {
 
   .carousel-item-left {
     .event {
-        color: #004494;
+      color: #004494;
     }
     h1 {
       width: 300px;
+
+      @include sm {
+        font-size: 3.3rem;
+      }
     }
 
     h4 {
       font-size: 1rem;
       font-weight: 300;
+
+      @include sm {
+        padding: 0 60px;
+        font-size: 1.2rem;
+        color: white;
+        background: rgba($color: #000000, $alpha: 0.5);
+        margin: 0 30px;
+      }
+    }
+    @include sm {
+      background: url("../ecra-assets/Images/Startseite/header-image.png");
+      background-position-x: -50px;
     }
   }
   .carousel-item-rigth {
@@ -60,6 +156,10 @@ a {
     border-radius: 50%;
     position: absolute;
     top: 100%;
+
+    @include sm {
+      display: none;
+    }
   }
 
   .carousel-control-prev {
@@ -93,5 +193,18 @@ a {
   }
 }
 //--- CAROUSEL END ---
+//--- NEWS ---
+.card {
+  border: none;
+}
+//--- NEWS END ---
+//--- FOOTER ---
+footer {
+  height: 400px;
+  padding: 30px 0;
+  background: #004494;
+  color: white;
+}
+//--- FOOTER END ---
 
 
