@@ -31,46 +31,70 @@ nav {
       cursor: pointer;
 
       .searchBG {
+        display: flex;
         width: 100px;
+        height: 60px;
       }
 
-      .searchText {
-        position: absolute;
-        top: 50%;
-        left: 35%;
-        transform: translate(-50%, -50%);
-      }
+      .searchText,
       .searchIcon {
         position: absolute;
         top: 50%;
-        right: 0;
         transform: translate(-50%, -50%);
+      }
+      .searchText {
+        left: 40%;
+        color: white;
+      }
+      .searchIcon {
+        right: 3px;
       }
     }
 
     .searchInput {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 70px;
       display: flex;
       height: 100%;
 
+      &::before {
+        content: "";
+        position: absolute;
+        background: white;
+        width: 86%;
+        height: 1px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background: url("../img/search.svg") no-repeat scroll 7px 7px;
+        bottom: 30px;
+        right: 45px;
+        width: 30px;
+        height: 30px;
+      }
+
       input {
         height: 100%;
-        width: 800px;
+        width: 680px;
         border: none;
-        background: #004494;
+        background: rgb(0, 68, 148);
+        background: radial-gradient(
+          circle,
+          rgb(0, 68, 148),
+          rgb(0, 68, 148) 99%,
+          rgba(255, 255, 255, 1) 99%
+        );
         position: relative;
-
-        // &:before {
-        //     content: "";
-        //     position: absolute;
-        //     width: 400px;
-        //     height: 10px;
-        //     background: white;
-        //     top: 10px;
-        //     left: 0;
-        // }
+        padding-left: 50px;
+        color: white;
 
         &::placeholder {
           color: white;
@@ -88,10 +112,14 @@ nav {
     }
 
     .form-hidden {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.4s;
     }
     .form-visible {
-      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.4s;
     }
   }
 }
@@ -206,5 +234,3 @@ footer {
   color: white;
 }
 //--- FOOTER END ---
-
-

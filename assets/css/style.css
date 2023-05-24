@@ -27,33 +27,60 @@ nav .navContent .searchBtn {
   cursor: pointer;
 }
 nav .navContent .searchBtn .searchBG {
+  display: flex;
   width: 100px;
+  height: 60px;
 }
-nav .navContent .searchBtn .searchText {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
+nav .navContent .searchBtn .searchText,
 nav .navContent .searchBtn .searchIcon {
   position: absolute;
   top: 50%;
-  right: 0;
   transform: translate(-50%, -50%);
+}
+nav .navContent .searchBtn .searchText {
+  left: 40%;
+  color: white;
+}
+nav .navContent .searchBtn .searchIcon {
+  right: 3px;
 }
 nav .navContent .searchInput {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 70px;
   display: flex;
   height: 100%;
 }
+nav .navContent .searchInput::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 86%;
+  height: 1px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+nav .navContent .searchInput::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: url("../img/search.svg") no-repeat scroll 7px 7px;
+  bottom: 30px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+}
 nav .navContent .searchInput input {
   height: 100%;
-  width: 800px;
+  width: 680px;
   border: none;
-  background: #004494;
+  background: rgb(0, 68, 148);
+  background: radial-gradient(circle, rgb(0, 68, 148), rgb(0, 68, 148) 99%, rgb(255, 255, 255) 99%);
   position: relative;
+  padding-left: 50px;
+  color: white;
 }
 nav .navContent .searchInput input::placeholder {
   color: white;
@@ -67,10 +94,14 @@ nav .navContent .searchInput .searchCloseBtn {
   padding: 10px;
 }
 nav .navContent .form-hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
 }
 nav .navContent .form-visible {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
 }
 
 .carousel {

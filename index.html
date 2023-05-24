@@ -121,7 +121,7 @@
                   </li>
                 </ul>
 
-                <form class="d-flex" role="search">
+                <form class="d-none d-md-flex" role="search">
                   <div class="searchInput form-hidden">
                     <input
                       class="form-control me-2"
@@ -131,15 +131,36 @@
                     />
                     <span class="searchCloseBtn">x</span>
                   </div>
-                  <div class="searchBtn">
-                    <embed
-                      class="searchBG"
-                      src="./assets//ecra-assets/Vector/vector-2.svg"
-                    />
+                  <div class="searchBtn form-visible">
+                    <div class="searchBG">
+                      <img
+                        src="./assets/img/search-bubble.svg"
+                        alt="search-bubble.svg"
+                      />
+                    </div>
+
                     <span class="searchText">Search</span>
                     <img
                       class="searchIcon"
                       src="./assets/img/search.svg"
+                      alt="search"
+                    />
+                  </div>
+                </form>
+                <form class="d-flex d-md-none" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="searchInput form-hidden">
+                    <span class="searchCloseBtn">x</span>
+                  </div>
+                  <div class="searchBtn form-visible">
+                    <img
+                      class="searchIcon pe-1"
+                      src="./assets/img/search-mobile.svg"
                       alt="search"
                     />
                   </div>
