@@ -31,15 +31,28 @@ var swiper = new Swiper(".mySwiper", {
 
 //--- CAROUSEL ---
 const mediaQuery = window.matchMedia("(max-width: 767.9px)");
-const carouselID = document.querySelector("#carouselExample");
-
+const carouselID = document.querySelector(".carousel");
+const carouselItem = document.querySelector(".carousel-item");
+const carouselControlPrev = document.querySelector(".carousel-control-prev");
+const carouselControlNext = document.querySelector(".carousel-control-next");
+const dataBsTarget = "data-bs-target";
 const handleTabletChange = (e) => {
     if (e.matches) {
       carouselID.id = "carouselExampleInterval"
-      carouselID.setAttribute("data-bs-ride","carousel")
+      carouselControlPrev.removeAttribute(dataBsTarget, "#carouselExampleControls")
+      carouselControlNext.removeAttribute(dataBsTarget, "#carouselExampleControls")
+      carouselID.setAttribute("data-bs-ride", "carousel")
+      carouselItem.setAttribute("data-bs-interval", "2000")
+      carouselControlPrev.setAttribute(dataBsTarget, "#carouselExampleInterval")
+      carouselControlNext.setAttribute(dataBsTarget, "#carouselExampleInterval")
     } else {
-      carouselID.id = "carouselExample"
-      carouselID.removeAttribute("data-bs-ride","carousel")
+      carouselID.id = "carouselExampleControls"
+      carouselID.removeAttribute("data-bs-ride", "carousel")
+      carouselItem.removeAttribute("data-bs-interval", "2000")
+      carouselControlPrev.removeAttribute(dataBsTarget, "#carouselExampleInterval")
+      carouselControlNext.removeAttribute(dataBsTarget, "#carouselExampleInterval")
+      carouselControlPrev.setAttribute(dataBsTarget, "#carouselExampleControls")
+      carouselControlNext.setAttribute(dataBsTarget, "#carouselExampleControls")
     }
 }
 mediaQuery.addListener(handleTabletChange)
