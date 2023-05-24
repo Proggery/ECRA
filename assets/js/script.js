@@ -17,17 +17,17 @@ searchCloseBtn.addEventListener("click", (e) => {
   searchBtn.classList.add("form-visible");
 });
 
-//--- SLIDER ---
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  grabCursor: true,
-  pagination: false,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
+// //--- SLIDER ---
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 5,
+//   spaceBetween: 30,
+//   grabCursor: true,
+//   pagination: false,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+// });
 
 //--- CAROUSEL ---
 const mediaQuery = window.matchMedia("(max-width: 767.9px)");
@@ -42,7 +42,7 @@ const handleTabletChange = (e) => {
       carouselControlPrev.removeAttribute(dataBsTarget, "#carouselExampleControls")
       carouselControlNext.removeAttribute(dataBsTarget, "#carouselExampleControls")
       carouselID.setAttribute("data-bs-ride", "carousel")
-      carouselItem.setAttribute("data-bs-interval", "2000")
+      carouselItem.setAttribute("data-bs-interval", "1000")
       carouselControlPrev.setAttribute(dataBsTarget, "#carouselExampleInterval")
       carouselControlNext.setAttribute(dataBsTarget, "#carouselExampleInterval")
     } else {
