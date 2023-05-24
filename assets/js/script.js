@@ -58,9 +58,3 @@ const handleTabletChange = (e) => {
 mediaQuery.addListener(handleTabletChange)
 handleTabletChange(mediaQuery)
 
-//id
-// carouselExampleInterval;
-// data-bs-ride="carousel"
-
-// button
-// data-bs-target="#carouselExampleInterval";

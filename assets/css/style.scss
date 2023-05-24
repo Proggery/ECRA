@@ -4,7 +4,7 @@
 a {
   text-decoration: none;
 }
-h3{
+h3 {
   font-size: 1.2rem;
 }
 h4 {
@@ -32,6 +32,7 @@ h4 {
 .secondaryBtn {
   color: #004494;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .title {
@@ -260,13 +261,57 @@ nav {
   height: 1rem;
 }
 
-
 //--- CAROUSEL END ---
 //--- NEWS ---
 .card {
   border: none;
+
+  .card-body {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h3 {
+      @include sm {
+        text-align: center;
+      }
+    }
+
+    .card-date {
+      display: flex;
+      padding-bottom: 20px;
+      opacity: 0.5;
+      font-size: 0.9rem;
+
+      @include sm {
+        margin: auto;
+      }
+    }
+    
+    h4 {
+      @include sm {
+        text-align: center;
+      }
+    }
+
+    .secondaryBtn {
+      @include sm {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 //--- NEWS END ---
+//--- What is the ECRA ---
+.What-is-the-ECRA {
+  h4 {
+    max-width: 730px;
+    margin: auto;
+  }
+}
+//--- What is the ECRA END ---
 //--- FOOTER ---
 footer {
   height: 400px;
