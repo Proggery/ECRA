@@ -172,63 +172,53 @@
           <!-- CAROUSEL -->
           <div id="carouselExample" class="carousel slide p-0">
             <div class="carousel-inner">
-              <div class="container py-5">
-                <div class="row">
-                  <div class="carousel-item active p-0">
-                    <div class="d-flex">
-                      <div
-                        class="carousel-item-left col-md-6 d-flex flex-column d-md-block"
-                      >
-                        <h1 class="text-center text-md-start mx-auto mx-md-0">
-                          Knowledge for climate action
-                        </h1>
-                        <h4 class="text-center text-md-start py-5 py-md-4">
-                          The European Climate Research Alliance (ECRA) is an
-                          association of 23 leading European research
-                          institutions.
-                        </h4>
-                        <a
-                          class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0"
-                          href="#"
-                        >
-                          Learn more
-                        </a>
-                      </div>
-                      <div class="carousel-item-rigth col-md-6">
-                        <img
-                          src="./assets/ecra-assets/Images/Startseite/header-image.png"
-                          alt="header img"
-                        />
-                      </div>
-                    </div>
+              <div class="carousel-item active p-0" data-bs-interval="2000">
+                <div class="carousel-item-content d-flex">
+                  <div
+                    class="carousel-item-left col-md-6 d-flex flex-column d-md-block"
+                  >
+                    <h1 class="text-center text-md-start mx-auto mx-md-0">
+                      Knowledge for climate action
+                    </h1>
+                    <h4 class="text-center text-md-start py-5 py-md-4">
+                      The European Climate Research Alliance (ECRA) is an
+                      association of 23 leading European research institutions.
+                    </h4>
+                    <a class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0" href="#">
+                      Learn more
+                    </a>
                   </div>
+                  <div class="carousel-item-rigth">
+                    <img
+                      src="./assets/ecra-assets/Images/Startseite/header-image.png"
+                      alt="header img"
+                    />
+                  </div>
+                </div>
+              </div>
 
-                  <div class="carousel-item p-0">
-                    <div class="d-flex">
-                      <div class="carousel-item-left col-6">
-                        <span class="event">EVENT</span>
-                        <h1>Next ExCom Meeting in March</h1>
-                        <h4 class="py-4">
-                          Our next ExCom Meeting will take place as an in-person
-                          meeting on 6-7 March 2023. Information via
-                          corresponding mail. Information mail:
-                          info@ecra-climate.eu
-                        </h4>
-                        <a
-                          class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0"
-                          href="#"
-                        >
-                          Send mail
-                        </a>
-                      </div>
-                      <div class="carousel-item-rigth col-6">
-                        <img
-                          class="img2"
-                          src="./assets/ecra-assets/Images/Startseite/header-image.png"
-                          alt="header img"
-                        />
-                      </div>
-                    </div>
+              <div class="carousel-item p-0">
+                <div class="carousel-item-content d-flex">
+                  <div class="carousel-item-left col-md-6 d-flex flex-column d-md-block">
+                    <div class="event text-center text-md-start">EVENT</div>
+                    <h1 class="text-center text-md-start mx-auto mx-md-0">
+                      Next ExCom Meeting in March
+                    </h1>
+                    <h4 class="text-center text-md-start py-5 py-md-4">
+                      Our next ExCom Meeting will take place as an in-person
+                      meeting on 6-7 March 2023. Information via corresponding
+                      mail. Information mail: info@ecra-climate.eu
+                    </h4>
+                    <a class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0" href="#">
+                      Send mail
+                    </a>
+                  </div>
+                  <div class="carousel-item-rigth">
+                    <img
+                      class="img2"
+                      src="./assets/ecra-assets/Images/Startseite/header-image.png"
+                      alt="header img"
+                    />
                   </div>
                 </div>
               </div>
@@ -237,8 +227,8 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExample"
               data-bs-slide="prev"
+              data-bs-target="#carouselExampleInterval"
             >
               <span
                 class="carousel-control-prev-icon"
@@ -251,8 +241,8 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExample"
               data-bs-slide="next"
+              data-bs-target="#carouselExampleInterval"
             >
               <span
                 class="carousel-control-next-icon"

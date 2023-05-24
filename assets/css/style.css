@@ -9,6 +9,13 @@ a {
   border-radius: 20px;
   transition: 0.4s;
 }
+@media (max-width: 576px) {
+  .primaryBtn {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-radius: 0;
+    padding: 20px 40px;
+  }
+}
 .primaryBtn:hover {
   background: #e4ff1b;
   color: black;
@@ -105,56 +112,83 @@ nav .navContent .form-visible {
 }
 
 .carousel {
-  background: url("../ecra-assets/Vector/vector-1.svg");
+  background: url("../ecra-assets/Vector/vector-1.svg") no-repeat;
   background-position: bottom;
-  height: 500px;
+  height: 400px;
   position: relative;
 }
-.carousel .carousel-item-left .event {
+@media (max-width: 576px) {
+  .carousel {
+    background: url("../ecra-assets/Images/Startseite/header-image.png");
+    background-position-x: -30px;
+    height: 570px;
+  }
+}
+.carousel .carousel-item-content {
+  overflow: hidden;
+}
+.carousel .carousel-item-content .carousel-item-left {
+  margin: 50px 0 50px 78.5px;
+}
+@media (max-width: 576px) {
+  .carousel .carousel-item-content .carousel-item-left {
+    margin-left: 0;
+  }
+}
+.carousel .carousel-item-content .carousel-item-left .event {
   color: #004494;
 }
-.carousel .carousel-item-left h1 {
+@media (max-width: 576px) {
+  .carousel .carousel-item-content .carousel-item-left .event {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.carousel .carousel-item-content .carousel-item-left h1 {
   width: 300px;
 }
 @media (max-width: 576px) {
-  .carousel .carousel-item-left h1 {
-    font-size: 3.3rem;
+  .carousel .carousel-item-content .carousel-item-left h1 {
+    font-size: 2.4rem;
   }
 }
-.carousel .carousel-item-left h4 {
+.carousel .carousel-item-content .carousel-item-left h4 {
   font-size: 1rem;
   font-weight: 300;
 }
 @media (max-width: 576px) {
-  .carousel .carousel-item-left h4 {
-    padding: 0 60px;
+  .carousel .carousel-item-content .carousel-item-left h4 {
+    padding: 0 40px;
     font-size: 1.2rem;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    margin: 0 30px;
+    margin: 30px 70px;
   }
 }
-@media (max-width: 576px) {
-  .carousel .carousel-item-left {
-    background: url("../ecra-assets/Images/Startseite/header-image.png");
-    background-position-x: -50px;
-  }
-}
-.carousel .carousel-item-rigth {
+.carousel .carousel-item-content .carousel-item-rigth {
   position: relative;
   height: 500px;
+  width: 700px;
 }
-.carousel .carousel-item-rigth img {
+@media (max-width: 576px) {
+  .carousel .carousel-item-content .carousel-item-rigth {
+    display: none;
+  }
+}
+.carousel .carousel-item-content .carousel-item-rigth img {
   position: absolute;
-  top: -380px;
-  left: 20px;
-  width: 1100px;
+  top: -80px;
+  left: 50px;
+  width: 650px;
 }
-.carousel .carousel-item-rigth .img2 {
+.carousel .carousel-item-content .carousel-item-rigth .img2 {
   opacity: 0.5;
 }
-.carousel .carousel-control-prev,
-.carousel .carousel-control-next {
+
+.carousel-control-prev,
+.carousel-control-next {
   background: #004494;
   opacity: 1;
   width: 40px;
@@ -164,20 +198,23 @@ nav .navContent .form-visible {
   top: 100%;
 }
 @media (max-width: 576px) {
-  .carousel .carousel-control-prev,
-  .carousel .carousel-control-next {
+  .carousel-control-prev,
+  .carousel-control-next {
     display: none;
   }
 }
-.carousel .carousel-control-prev {
+
+.carousel-control-prev {
   left: 48%;
   transform: translate(-50%, -50%);
 }
-.carousel .carousel-control-next {
+
+.carousel-control-next {
   left: 52%;
   transform: translate(-50%, -50%);
 }
-.carousel .carousel-control-prev-icon {
+
+.carousel-control-prev-icon {
   background: url("../img/arrow_right.png") no-repeat;
   position: absolute;
   top: 50%;
@@ -186,7 +223,8 @@ nav .navContent .form-visible {
   width: 0.6rem;
   height: 1rem;
 }
-.carousel .carousel-control-next-icon {
+
+.carousel-control-next-icon {
   background: url("../img/arrow_left.png") no-repeat;
   position: absolute;
   top: 50%;
