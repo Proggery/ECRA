@@ -286,6 +286,50 @@ nav .navContent .form-visible {
   margin: auto;
 }
 
+.collaborative-programmes {
+  background: url("../ecra-assets/Vector/vector-3.svg") no-repeat;
+  background-size: cover;
+  padding: 50px 0 100px;
+  background-position-x: -100px;
+}
+@media (max-width: 576px) {
+  .collaborative-programmes {
+    background-size: 180%;
+    background-position-y: 40px;
+  }
+}
+.collaborative-programmes .title h2 {
+  width: 400px;
+}
+@media (max-width: 576px) {
+  .collaborative-programmes .title h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .collaborative-programmes .title h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .collaborative-programmes .content {
+    background: #c7e7f9;
+    padding-bottom: 50px;
+  }
+}
+.collaborative-programmes .content .card {
+  background: transparent;
+}
+.collaborative-programmes .content .card .card-body {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.collaborative-programmes .content .card .card-body .secondaryBtn {
+  margin-top: auto;
+}
+
 footer {
   height: 400px;
   padding: 30px 0;

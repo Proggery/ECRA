@@ -288,7 +288,7 @@ nav {
         margin: auto;
       }
     }
-    
+
     h4 {
       @include sm {
         text-align: center;
@@ -312,6 +312,56 @@ nav {
   }
 }
 //--- What is the ECRA END ---
+//--- Collaborative Programmes ---
+.collaborative-programmes {
+  background: url("../ecra-assets/Vector/vector-3.svg") no-repeat;
+  background-size: cover;
+  padding: 50px 0 100px;
+  background-position-x: -100px;
+
+  @include sm {
+    background-size: 180%;
+    background-position-y: 40px;
+  }
+  
+  .title {
+    h2 {
+      width: 400px;
+      
+      @include sm {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    h4 {
+      @include sm {
+        text-align: center;
+      }
+    }
+  }
+  
+  .content {
+    @include sm {
+      background: #c7e7f9;
+      padding-bottom: 50px;
+}
+    .card {
+      background: transparent;
+      
+      .card-body {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+  
+        .secondaryBtn {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
+//--- Collaborative Programmes END ---
 //--- FOOTER ---
 footer {
   height: 400px;
