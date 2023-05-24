@@ -1,6 +1,9 @@
 @import "./mediaquery.scss";
 
 //--- GLOBALS ---
+* {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
