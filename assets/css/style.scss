@@ -2,7 +2,9 @@
 
 //--- GLOBALS ---
 * {
-  overflow-x: hidden;
+  @include sm {
+    overflow-x: hidden;
+  }
 }
 a {
   text-decoration: none;
@@ -367,8 +369,7 @@ nav {
 //--- Collaborative Programmes END ---
 //--- FOOTER ---
 footer {
-  height: 400px;
-  padding: 30px 0;
+  height: 300px;
   background: #004494;
   color: white;
 }
