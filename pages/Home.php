@@ -11,84 +11,88 @@
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Events & Activities
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a class="dropdown-item" href="index.php?page=conferences"> Conferences </a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#"> Workshops </a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#"> General Assembly </a>
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Knowledge Hub
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a class="dropdown-item" href="#"> White Paper </a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#"> Publications</a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#">
-                                              Shortnotes for Policymakers
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      About us
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a class="dropdown-item" href="#">
-                                              Executive Commitee
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#"> Governance </a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="#"> Become a member </a>
-                                      </li>
-                                  </ul>
-                              </li>
-                          </ul>
+                          <div class="d-flex flex-column flex-md-row  ms-md-auto me-md-0">
 
-                          <form class="d-none d-md-flex" role="search">
-                              <div class="searchInput form-hidden">
-                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                  <span class="searchCloseBtn">x</span>
-                              </div>
-                              <div class="searchBtn form-visible">
-                                  <div class="searchBG">
-                                      <img src="./assets/img/search-bubble.svg" alt="search-bubble.svg" />
+                              <ul class="navbar-nav mb-2 mb-lg-0 order-2 order-md-1 mx-auto">
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Events & Activities
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                          <li>
+                                              <a class="dropdown-item" href="index.php?page=conferences"> Conferences </a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#"> Workshops </a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#"> General Assembly </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Knowledge Hub
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                          <li>
+                                              <a class="dropdown-item" href="#"> White Paper </a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#"> Publications</a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#">
+                                                  Shortnotes for Policymakers
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          About us
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                          <li>
+                                              <a class="dropdown-item" href="#">
+                                                  Executive Commitee
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#"> Governance </a>
+                                          </li>
+                                          <li>
+                                              <a class="dropdown-item" href="#"> Become a member </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                              </ul>
+
+                              <form class="d-none d-md-flex order-3" role="search">
+                                  <div class="searchInput form-hidden">
+                                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                      <span class="searchCloseBtn">x</span>
                                   </div>
+                                  <div class="searchBtn form-visible">
+                                      <div class="searchBG">
+                                          <img src="./assets/img/search-bubble.svg" alt="search-bubble.svg" />
+                                      </div>
 
-                                  <span class="searchText">Search</span>
-                                  <img class="searchIcon" src="./assets/img/search.svg" alt="search" />
-                              </div>
-                          </form>
-                          <form class="d-flex d-md-none" role="search">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                              <div class="searchInput form-hidden">
-                                  <span class="searchCloseBtn">x</span>
-                              </div>
-                              <div class="searchBtn form-visible">
-                                  <img class="searchIcon pe-1" src="./assets/img/search-mobile.svg" alt="search" />
-                              </div>
-                          </form>
+                                      <span class="searchText">Search</span>
+                                      <img class="searchIcon" src="./assets/img/search.svg" alt="search" />
+                                  </div>
+                              </form>
+
+                              <form class="d-flex d-md-none order-1 order-md-2 mt-5 mt-md-0" role="search">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                  <div class="searchInput form-hidden">
+                                      <span class="searchCloseBtn">x</span>
+                                  </div>
+                                  <div class="searchBtn form-visible">
+                                      <img class="searchIcon pe-1" src="./assets/img/search-mobile.svg" alt="search" />
+                                  </div>
+                              </form>
+                          </div>
                       </div>
                   </div>
               </nav>

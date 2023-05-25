@@ -48,15 +48,12 @@ h4 {
 
 //--- NAVBAR ---
 nav {
-  .navbar-toggler {
-    border: none;
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
   .navContent {
     position: relative;
+
+    ul {
+      align-items: center;
+    }
 
     .searchBtn {
       position: relative;
@@ -152,6 +149,30 @@ nav {
       visibility: visible;
       opacity: 1;
       transition: 0.4s;
+    }
+  }
+
+  @include sm {
+    .navbar-toggler {
+      border: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    ul {
+      width: 40%;
+      padding: 10px 0 30px;
+
+      li {
+        margin: 7px 0;
+        width: 100%;
+
+        .nav-link {
+          text-align: end;
+        }
+      }
     }
   }
 }
@@ -328,37 +349,37 @@ nav {
     background-size: 180%;
     background-position-y: 40px;
   }
-  
+
   .title {
     h2 {
       width: 400px;
-      
+
       @include sm {
         width: 100%;
         text-align: center;
       }
     }
-    
+
     h4 {
       @include sm {
         text-align: center;
       }
     }
   }
-  
+
   .content {
     @include sm {
       background: #c7e7f9;
       padding-bottom: 50px;
-}
+    }
     .card {
       background: transparent;
-      
+
       .card-body {
         height: 120px;
         display: flex;
         flex-direction: column;
-  
+
         .secondaryBtn {
           margin-top: auto;
         }

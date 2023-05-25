@@ -46,14 +46,11 @@ h4 {
   font-size: 2.6rem;
 }
 
-nav .navbar-toggler {
-  border: none;
-}
-nav .navbar-toggler:focus {
-  box-shadow: none;
-}
 nav .navContent {
   position: relative;
+}
+nav .navContent ul {
+  align-items: center;
 }
 nav .navContent .searchBtn {
   position: relative;
@@ -135,6 +132,25 @@ nav .navContent .form-visible {
   visibility: visible;
   opacity: 1;
   transition: 0.4s;
+}
+@media (max-width: 576px) {
+  nav .navbar-toggler {
+    border: none;
+  }
+  nav .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  nav ul {
+    width: 40%;
+    padding: 10px 0 30px;
+  }
+  nav ul li {
+    margin: 7px 0;
+    width: 100%;
+  }
+  nav ul li .nav-link {
+    text-align: end;
+  }
 }
 
 .carousel {
