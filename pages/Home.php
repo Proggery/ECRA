@@ -119,16 +119,16 @@
                       <div class="carousel-item p-0">
                           <div class="carousel-item-content d-flex">
                               <div class="carousel-item-left col-md-6 d-flex flex-column d-md-block">
-                                  <div class="event text-center text-md-start">EVENT</div>
-                                  <h1 class="text-center text-md-start mx-auto mx-md-0">
+                                  <div class="event text-center text-md-start order-2">EVENT</div>
+                                  <h1 class="text-center text-md-start mx-auto mx-md-0 order-1">
                                       Next ExCom Meeting in March
                                   </h1>
-                                  <h4 class="text-center text-md-start py-5 py-md-4">
+                                  <h4 class="text-center text-md-start py-5 py-md-4 order-3">
                                       Our next ExCom Meeting will take place as an in-person
                                       meeting on 6-7 March 2023. Information via corresponding
                                       mail. Information mail: info@ecra-climate.eu
                                   </h4>
-                                  <a class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0" href="#">
+                                  <a class="primaryBtn mx-auto mx-md-0 mt-4 mt-md-0 order-4" href="#">
                                       Send mail
                                   </a>
                               </div>

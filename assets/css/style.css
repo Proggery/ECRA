@@ -46,6 +46,12 @@ h4 {
   font-size: 2.6rem;
 }
 
+nav .navbar-toggler {
+  border: none;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
 nav .navContent {
   position: relative;
 }
@@ -157,14 +163,6 @@ nav .navContent .form-visible {
 }
 .carousel .carousel-item-content .carousel-item-left .event {
   color: #004494;
-}
-@media (max-width: 576px) {
-  .carousel .carousel-item-content .carousel-item-left .event {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 .carousel .carousel-item-content .carousel-item-left h1 {
   width: 300px;
